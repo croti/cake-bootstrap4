@@ -1,11 +1,11 @@
 <?php
 
-namespace LilHermit\Bootstrap4\View\Helper;
+namespace Bootstrap4\View\Helper;
 
 
 use Cake\Utility\Hash;
 use Cake\View\View;
-use LilHermit\Toolkit\Utility\Html;
+use Bootstrap4\Utility\Html;
 
 class FormHelper extends \Cake\View\Helper\FormHelper {
 
@@ -28,8 +28,8 @@ class FormHelper extends \Cake\View\Helper\FormHelper {
     protected $_userChangedTemplates = [];
 
     protected $_bootstrapWidgets = [
-        'bootstrapDateTime' => ['LilHermit/Bootstrap4.BootstrapDateTime'],
-        'hidden' => ['LilHermit/Bootstrap4.Hidden']
+        'bootstrapDateTime' => ['Bootstrap4.BootstrapDateTime'],
+        'hidden' => ['Bootstrap4.Hidden']
     ];
 
     protected $_bootstrapTypeMap = [

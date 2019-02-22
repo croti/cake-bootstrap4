@@ -1,6 +1,6 @@
 <?php
 
-namespace LilHermit\Bootstrap4\View;
+namespace Bootstrap4\View;
 
 use Cake\View\View;
 

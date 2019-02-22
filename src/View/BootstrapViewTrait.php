@@ -1,14 +1,14 @@
 <?php
 
-namespace LilHermit\Bootstrap4\View;
+namespace Bootstrap4\View;
 
 trait BootstrapViewTrait {
 
     public function initializeBootstrap(array $options = []) {
-        $this->loadHelper('Html', ['className' => 'LilHermit/Bootstrap4.Html']);
-        $this->loadHelper('Flash', ['className' => 'LilHermit/Bootstrap4.Flash']);
-        $this->loadHelper('Form', ['className' => 'LilHermit/Bootstrap4.Form']);
-        $this->loadHelper('Paginator', ['className' => 'LilHermit/Bootstrap4.Paginator']);
+        $this->loadHelper('Html', ['className' => 'Bootstrap4.Html']);
+        $this->loadHelper('Flash', ['className' => 'Bootstrap4.Flash']);
+        $this->loadHelper('Form', ['className' => 'Bootstrap4.Form']);
+        $this->loadHelper('Paginator', ['className' => 'Bootstrap4.Paginator']);
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace LilHermit\Bootstrap4\View\Helper;
+namespace Bootstrap4\View\Helper;
 
 class FlashHelper extends \Cake\View\Helper\FlashHelper {
 
@@ -28,7 +28,7 @@ class FlashHelper extends \Cake\View\Helper\FlashHelper {
 
             list($plugin, $element) = pluginSplit($item['element']);
             if ($plugin === null && in_array($item['element'], $pluginOverrides)) {
-                $item['element'] = 'LilHermit/Bootstrap4.' . $element;
+                $item['element'] = 'Bootstrap4.' . $element;
             }
         }
         $this->getSession()->write("Flash.$key", $stack);
@@ -42,8 +42,8 @@ class FlashHelper extends \Cake\View\Helper\FlashHelper {
      * @return \Cake\Network\Session
      */
     private function getSession() {
-        if (method_exists($this->request, 'getSession')) {
-            return $this->request->getSession();
+        if (method_exists($this->getView()->getRequest(), 'getSession')) {
+            return $this->getView()->getRequest()->getSession();
         } else {
             /** @noinspection PhpDeprecationInspection */
             return $this->request->session();

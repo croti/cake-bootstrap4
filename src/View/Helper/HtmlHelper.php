@@ -1,9 +1,9 @@
 <?php
-namespace LilHermit\Bootstrap4\View\Helper;
+namespace Bootstrap4\View\Helper;
 
 
 use Cake\View\View;
-use LilHermit\Bootstrap4\Configure\Assets;
+use Bootstrap4\Configure\Assets;
 use LilHermit\Toolkit\Utility\Html;
 
 class HtmlHelper extends \Cake\View\Helper\HtmlHelper {

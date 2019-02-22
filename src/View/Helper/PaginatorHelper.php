@@ -1,5 +1,5 @@
 <?php
-namespace LilHermit\Bootstrap4\View\Helper;
+namespace Bootstrap4\View\Helper;
 
 use Cake\View\View;
 
